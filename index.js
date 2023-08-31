@@ -9,7 +9,7 @@ app.use(express.json())
 
 const port = process.env.PORT || 3001
 
-app.use('/',require('./routes/coments'))
+app.use('/api',require('./routes/coments'))
 
 app.listen(port, ()=>{
     console.log('http://localhost:'+port)
