@@ -11,4 +11,8 @@ const port = process.env.PORT || 3001
 
 app.use('/api',require('../routes/coments'))
 
+app.get('/',(req, res)=>{
+    res.send('Hola Mundo!')
+})
+
 dbConnect()
