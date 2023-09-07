@@ -10,6 +10,7 @@ app.use(express.json())
 const port = process.env.PORT || 3001
 
 app.use('/api',require('../routes/coments'))
+app.listen(port)
 
 
 dbConnect()
