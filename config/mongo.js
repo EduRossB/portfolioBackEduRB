@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
 const dbConnect = async () => {
   try {
@@ -12,5 +12,6 @@ const dbConnect = async () => {
     console.log("******ERROR DE CONEXION******");
   }
 };
+
 
 module.exports = dbConnect;
